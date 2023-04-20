@@ -26,6 +26,6 @@ export default [
       }),
       terser(),
     ],
-    external: ["react", "react-dom", "react/jsx-runtime"],
+    external: ["react", "react-dom", "react/jsx-runtime", "styled-components"],
   },
 ];

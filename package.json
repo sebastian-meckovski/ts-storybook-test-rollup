@@ -1,6 +1,6 @@
 {
-  "name": "ts-storybook-test-rollup",
-  "version": "1.0.0",
+  "name": "sb-test-by-seb",
+  "version": "1.0.21",
   "description": "test",
   "scripts": {
     "test": "test",
@@ -12,15 +12,18 @@
   },
   "author": "Sebastian Meckovski",
   "license": "MIT",
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "^5.0.4"
+  "peerDependencies": {
+    "styled-components": "^5.3.9"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.21.4",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.21.4",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-terser": "^0.4.1",
+    "@rollup/plugin-typescript": "^11.1.0",
     "@storybook/addon-essentials": "^7.0.6",
     "@storybook/addon-interactions": "^7.0.6",
     "@storybook/addon-links": "^7.0.6",
@@ -29,13 +32,12 @@
     "@storybook/react-webpack5": "^7.0.6",
     "@storybook/testing-library": "^0.0.14-next.2",
     "prop-types": "^15.8.1",
-    "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-commonjs": "^24.1.0",
-    "@rollup/plugin-node-resolve": "^15.0.0",
-    "@rollup/plugin-terser": "^0.4.1",
-    "@rollup/plugin-typescript": "^11.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^3.20.6",
     "rollup-plugin-postcss": "^4.0.2",
-    "storybook": "^7.0.6"
+    "storybook": "^7.0.6",
+    "styled-components": "^5.3.9",
+    "typescript": "^5.0.4"
   }
 }
