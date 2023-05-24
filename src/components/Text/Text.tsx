@@ -1,44 +1,16 @@
 import styled from "styled-components";
 
-export enum textSizes {
-  "small" = "-small",
-  "body" = "",
-  "lead" = "-large",
-}
-
-export declare type textSizesType = keyof typeof textSizes;
-
+export const textSizes = {
+  small: "12px",
+  medium: "20px",
+  large: "90px",
+};
 export interface TextProps {
-  /** Comes from the enum textSizes that has values 'small' | 'body' | 'lead' */
-  size?: "small" | "body" | "lead" | textSizes;
-  as?: string;
+  /** Comes from the enum textSizes that has values '12px' | '20px' | '90px' */
+  size?: "12px" | "20px" | "90px";
 }
 
 export const Text = styled.p<TextProps>`
-  font-family: CoopBank;
-  font-size: 16px;
-  line-height: 20px;
+  ${({ size }) => `
+  font-size: ${[`${size}`]}`};
 `;
-export const ErrorText = styled.p<TextProps>`
-  font-family: CoopBank;
-  color: #da1e28;
-`;
-
-export const InlineErrorText = styled.div`
-  color: #da1e28;
-  margin-left: 10px;
-`;
-
-export const WarningText = styled.p<TextProps>`
-  font-family: CoopBank;
-  color: #da1e28;
-`;
-
-export const CapitalizedText = styled.p<TextProps>`
-  text-transform: capitalize;
-`;
-
-Text.defaultProps = {
-  as: "p",
-  size: textSizes.body,
-};

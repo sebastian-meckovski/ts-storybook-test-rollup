@@ -31,13 +31,15 @@
     "@storybook/react": "^7.0.6",
     "@storybook/react-webpack5": "^7.0.6",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "postcss": "^8.4.23",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^3.20.6",
     "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^7.0.6",
-    "styled-components": "^5.3.9",
-    "typescript": "^5.0.4"
+    "styled-components": "^6.0.0-rc.1",
+    "typescript": "^5.0.4",
+    "@babel/core": "^7.21.8"
   }
 }
